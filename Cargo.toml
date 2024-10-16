@@ -1,0 +1,13 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+prost = "0.13.3"
+tokio = "1.40.0"
+tonic = {version = "0.12.2",features = ["gzip","zstd"]} 
+
+[build-dependencies]
+prost-build = "0.13.3"
+tonic-build = "0.12.2"
